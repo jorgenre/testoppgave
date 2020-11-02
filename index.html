@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<style>
+		code {
+			color: #e66;
+			white-space: nowrap;
+		}
+
+		.task {
+			max-width: 500px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="task">
+		<h1>Twitter archive</h1>
+		<p>The task is to search Twitter with JavaScript. Normally we make a call to a microservice, that returns json. But in this case we get the results from static json <a href="https://www.retriever-info.com/oppgave/twitter.json">https://www.retriever-info.com/oppgave/twitter.json</a>.
+		</p>
+		<p>
+			The post you get from <code>twitter.json</code> should be listed in <code>&lt;div id="result"&gt;</code> with the field "story" and "author.displayName". It's up to you how to use the other fields.
+		</p>
+		<p>
+			It should be possible to filter resultset by write author name in the <code>input</code> field. 
+		</p>
+		<p>
+			You choose the usages of framework. Style the list as you want, it should be easy to get a quick overview. You can do the task in your own file, if you do not want to reuse this form. 
+		</p>
+		<p>
+			For question contact: 
+			<br />Jørgen Repshus Manager of UX & Applications  <a href="mailto:jorgen@retriever.no">jorgen@retriever.no</a>  <a href="tel:(+47) 982 90 875">(+47) 982 90 875</a>
+		</p>
+		<p>
+		</p>
+	</div>
+
+<form>
+	Twitter hits from  <input id="author-name" type="text" placeholder="author"> <input type="button" value="Search">
+	<div id="result" >
+	</div>
+</form>
+
+</body>
+</html>
